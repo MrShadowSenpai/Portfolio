@@ -1,0 +1,19 @@
+.bg-black {
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+.vh {
+    height: 100vh;
+}
+
+.vw {
+    width: 100vw;
+}
+
+.fixed {
+    position: fixed;
+}
