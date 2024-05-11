@@ -1,0 +1,471 @@
+#home-header {
+    height: 76px;
+    top: 0;
+    left: 0;
+}
+
+#header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#nav-bar {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 20px;
+}
+
+#nav-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-bar ul>li:last-child {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#nav-bar ul>li:last-child:hover {
+    background-color: cyan;
+    transition: background-color 200ms ease-in;
+}
+
+#nav-bar ul>li:last-child>a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav-bar a:hover {
+    color: cyan;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+/*Sections*/
+#section_1 {
+    height: calc(100vh - 76px);
+    position: relative;
+}
+
+#home-text-description {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+}
+
+#home-text-description>p:first-child {
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#home-text-description>p:last-child {
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+#home-scroll-indicator {
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-scroll-indicator>svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#scroll-indicator-pc {
+    animation: play 2s infinite;
+}
+
+@keyframes play {
+    0% {
+        margin-bottom: 0;
+    }
+
+    50% {
+        margin-bottom: 10px;
+    }
+
+    100% {
+        margin-bottom: 0;
+    }
+}
+
+#scroll-indicator-mobile {
+    display: none;
+}
+
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#section_2 {
+    padding: 85px 10% 0 10%;
+}
+
+
+#section_2>img {
+    width: 25em;
+    border-radius: 22px;
+}
+
+#section_2_text {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#section_3 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.capsule {
+    position: relative;
+    width: 403px;
+    margin: 30px;
+}
+
+.capsule>svg {
+    position: absolute;
+    top: -43px;
+    left: -49px;
+}
+
+.capsule>p:first-of-type {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-variant: small-caps;
+}
+
+.capsule>p:nth-child(3) {
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.capsule>p:last-child {
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #454040;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    right: -1px;
+    left: 64%;
+    top: 1px;
+    bottom: 1px;
+    width: inherit;
+}
+
+.capsule-right>svg {
+    right: -49px;
+    left: unset;
+}
+
+.capsule-right>p:last-child {
+    right: unset;
+    left: -37%;
+}
+
+#section_3>h2:first-child,
+#section_4>h2:first-child,
+#section_2_text>h2 {
+    margin-bottom: 30px;
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+#section_4,
+#section_3 {
+    padding-top: 76px;
+}
+
+.cards {
+    gap: 20px;
+}
+
+.card {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #454040;
+    height: 12em;
+    flex-direction: column;
+    width: 12em;
+    border-radius: 22px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card>img {
+    width: 55%;
+    border-radius: 22px;
+    height: 55%;
+}
+
+.show-card {
+    display: none;
+}
+
+.show-card[data-visible="true"] {
+    display: flex;
+}
+
+.buttons {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FF33EB;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    margin: 30px auto 0;
+    text-align: center;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #c81fb7;
+    transition: background-color 200ms ease-in;
+}
+
+.buttons-links {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FF33EB;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.buttons-links:hover {
+    background-color: #c81fb7;
+    transition: background-color 200ms ease-in;
+}
+
+.form-inputs {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 15px;
+    background: #454040;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cyan;
+}
+
+footer>div:first-child {
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+footer>div:last-child>p:first-of-type {
+    margin: 0 10px;
+}
+
+#succes-message-contenaire {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 22px;
+    background-color: #454040;
+}
+
+@media(min-width: 55em) and (max-width:98em) {
+    #nav-bar {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #fff;
+        margin: 0 20px;
+    }
+
+    #succes-message-contenaire {
+        width: 40%;
+    }
+
+}
+
+@media(max-width: 55em) {
+    #nav-bar {
+        position: fixed;
+        inset: 0 0 0 30%;
+        width: 100%;
+        background-color: #000000;
+
+        transform: translateX(100%);
+        transition: transform 300ms ease-in;
+        padding: 0 0 0 30px;
+    }
+
+    #nav-bar[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    #nav-bar>ul:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    #nav-bar>ul li {
+        margin: 10px;
+    }
+
+    .mobile-nav-toggle {
+        position: absolute;
+        display: block;
+        z-index: 9999;
+        background: url("./../img/hamburger-menu-svgrepo-com.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 3rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 1rem;
+        right: 2rem;
+
+        transition: background 200ms ease-in;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background: url("./../img/close-menu-svgrepo-com.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #home-text-description {
+        position: absolute;
+        left: 30px;
+        top: 135px;
+        right: 30px;
+        bottom: unset;
+        text-align: center;
+    }
+
+    #home-text-description>p:last-child {
+        font-size: 1.5rem;
+    }
+
+    #home-scroll-indicator {
+        bottom: 60px;
+        right: 5%;
+        left: 5%;
+    }
+
+    #home-scroll-indicator>p {
+        font-size: 0.7rem;
+    }
+
+    #scroll-indicator-pc {
+        display: none;
+    }
+
+    #scroll-indicator-mobile {
+        display: block;
+        animation: play 2s infinite;
+    }
+
+    #section_2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    #section_2_text {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #section_2>img {
+        width: 20em;
+        border-radius: 22px;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section>div {
+        width: 100%;
+    }
+
+    footer>div:last-child {
+        font-size: .7rem;
+    }
+
+    #succes-message-contenaire {
+        width: 85%;
+    }
+}
